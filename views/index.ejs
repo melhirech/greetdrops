@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <%- include('greetingsSet', {greetingsCount: 18, factor: 1, product: 'A'}); %>
+      <div class="main">
+        <img src="https://www.datocms-assets.com/7756/1544632345-background-3045402640.png" alt="main_img">
+      </div>
+      <%- include('greetingsSet', {greetingsCount: 18, factor: 2, product: 'A'}); %>
+    </div>
+    <script src="/javascripts/index.js"></script>
+  </body>
+</html>

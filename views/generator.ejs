@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+            <%- include('greetingsSet', {greetings: product.Greetings, factor: 1, product: product.Product }); %>
+        <div class="main">
+            <img src="<%= product.User_main_image %>" alt="main_img">
+        </div>
+        <%- include('greetingsSet', {greetings: product.Greetings, factor: 2, product: product.Product }); %>
+    </div>
+    <script src="/javascripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="Demo">
+      <form class="Demo_Form" name="Demo_Form" action="generate_image">
+        <div class="Form_Element">
+          <label for="product_category_otions" class="product_category_label"
+            >Select Product:</label
+          >
+          <group class="inline-radio" id="product_category_otions">
+            <div>
+              <input
+                type="radio"
+                name="product_category"
+                value="A"
+                checked
+              /><label>A</label>
+            </div>
+            <div>
+              <input type="radio" name="product_category" value="B" /><label
+                >B</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="product_category" value="C" /><label
+                >C</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="product_category" value="D" /><label
+                >D</label
+              >
+            </div>
+            <div>
+              <input type="radio" name="product_category" value="E" /><label
+                >E</label
+              >
+            </div>
+          </group>
+        </div>
+        <div class="Form_Element">
+          <label for="main_image_otions" class="main_image_label"
+            >Select Main Image:</label
+          >
+          <group class="inline-radio" id="main_image_otions">
+            <div>
+              <input
+                type="radio"
+                name="main_image"
+                value="http://placehold.it/40x60/0bf/fff&text=A"
+                checked
+              />
+              <img src="http://placehold.it/40x60/0bf/fff&text=A" />
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="main_image"
+                value="http://placehold.it/40x60/0bf/fff&text=B"
+              />
+              <img src="http://placehold.it/40x60/0bf/fff&text=B" />
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="main_image"
+                value="http://placehold.it/40x60/0bf/fff&text=C"
+              /><img src="http://placehold.it/40x60/0bf/fff&text=C" />
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="main_image"
+                value="http://placehold.it/40x60/0bf/fff&text=D"
+              /><img src="http://placehold.it/40x60/0bf/fff&text=D" />
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="main_image"
+                value="http://placehold.it/40x60/0bf/fff&text=E"
+              /><img src="http://placehold.it/40x60/0bf/fff&text=E" />
+              >
+            </div>
+          </group>
+        </div>
+        <div class="Form_Element">
+          <button
+            class="Generate_Greeting"
+            type="button"
+            onclick="generateGreeting()"
+          >
+            Generate Greeting
+          </button>
+          <span id="error"></span>
+        </div>
+        <div class="Form_Element">
+                <button
+                  class="Generate_Greeting"
+                  type="submit"
+                >
+                  Generate Image
+                </button>
+              </div>
+      </form>
+    </div>
+    <div class="Output">
+      <div class="Output_Pre">
+        <pre id="preview"></pre>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+  </body>
+</html>
